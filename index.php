@@ -275,7 +275,19 @@
 				ersteFunktion();
 				zweiteFunktion("zweiten", 1234);
 				echo "<p>Summe: ".dritteFunktion(5, 6)."</p>";
-				echo "<p>Produkt: ".multipliziere()."</p>";
+				echo "<p>Produkt: ".quadrat()."</p>";
+
+				$zahl = 2;
+				echo '<p>Ausgangswert von $zahl: <strong>' . $zahl .
+					'</strong></p>';
+				echo "<em>call-by-value:</em>";
+				for ($i = 1; $i <= 3; $i++) {
+					quadrat($zahl); // call-by-value
+				}
+				echo "<p><em>call-by-reference:</em></p>";
+				for ($i = 1; $i <= 3; $i++) {
+					quadrat_referenz($zahl); // call-by-reference
+				}
 
 				break;
 				

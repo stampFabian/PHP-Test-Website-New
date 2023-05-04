@@ -11,8 +11,13 @@
         $ergebnis = $zahl1 + $zahl2;
         return $ergebnis;
     }
-    function multipliziere($zahl1 = 2, $zahl2 = 4){
+    function quadrat($zahl1 = 2, $zahl2 = 4){
         $ergebnis = $zahl1 * $zahl2;
         return $ergebnis;
+    }
+    function quadrat_referenz(&$value){
+        echo "<p>Wert in der Funktion: $value</p>";
+        $value = $value * $value;
+        echo $value . "<p>";
     }
 ?>
