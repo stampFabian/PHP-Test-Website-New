@@ -1,5 +1,6 @@
 <?php
 	require "funktionen.php";
+	//also require_once possible
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -273,7 +274,8 @@
 
 				ersteFunktion();
 				zweiteFunktion("zweiten", 1234);
-				echo "<p>".dritteFunktion(5, 6)."</p>";
+				echo "<p>Summe: ".dritteFunktion(5, 6)."</p>";
+				echo "<p>Produkt: ".multipliziere()."</p>";
 
 				break;
 				
