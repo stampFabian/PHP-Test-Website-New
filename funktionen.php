@@ -39,4 +39,17 @@
     }
     //zeigeZutaten("Butter", "Eier", "Mehl", "Salz");
 
+
+    function zeigeDaten($nachname, $vorname, $alter)
+    {
+        echo "<table cellpadding=5 cellspacing=0 border=1>";
+        echo "<tr><td>\$nachname:<td> $nachname</tr>";
+        echo "<tr><td>\$vorname: <td>$vorname</tr>";
+        echo "<tr><td>\$alter: <td>$alter</tr>";
+        echo "</table>";
+    }
+
+    //zeigeDaten(vorname: 'Paula', alter: 27, nachname: 'Herbst');
+
+
 ?>

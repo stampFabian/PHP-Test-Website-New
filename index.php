@@ -294,7 +294,9 @@
 				$zahlen = [3, 4];
 				echo "<p>Summe: ".dritteFunktion(...$zahlen)."</p>";
 
+				zeigeDaten(vorname: 'Paula', alter: 27, nachname: 'Herbst');
 
+				echo "<br>";
 				break;
 				
 			}
