@@ -2,7 +2,7 @@
 	require "funktionen.php";
 	//also require_once possible
 
-	fopen("user.txt", "r")
+	//fopen("user.txt", "r")
 
 ?>
 <!DOCTYPE html>
