@@ -1,6 +1,9 @@
 <?php
 	require "funktionen.php";
 	//also require_once possible
+
+	fopen("user.txt", "r")
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -300,11 +303,11 @@
 				break;
 				
 			}
-			
-			
+
+
 			?>
-			
-			
+
+
 			  
 			</div>
 			<div class="col-1 bg-info">
