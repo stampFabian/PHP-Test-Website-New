@@ -20,4 +20,23 @@
         $value = $value * $value;
         echo $value . "<p>";
     }
+
+
+    // Funktion mit variadischem Parameter
+    function zeigeZutaten(...$args)
+    {
+        /*
+        echo "<pre>";
+        print_r($args);
+        echo "</pre>";
+        */
+
+        echo "<ul>";
+        foreach ($args as $val) {
+            echo "<li>$val</li>";
+        }
+        echo "</ul>";
+    }
+    //zeigeZutaten("Butter", "Eier", "Mehl", "Salz");
+
 ?>

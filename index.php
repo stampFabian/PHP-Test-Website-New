@@ -84,7 +84,7 @@
 					echo "</pre>";
 				break;
 				Case 3:
-					?>
+			?>
 					<form action="<?php $_SERVER['PHP_SELF']; ?>?menu=1" method="POST" id="daten" name="daten">
 						<div class="mb-3">
 							<label for="vorname" class="form-label">Vorname: </label>
@@ -117,7 +117,7 @@
 						<button type="reset" class="btn btn-secondary">zurücksetzen</button>
 				
 					</form>
-					<?php
+			<?php
 				break;
 				Case 4:
 					include("pages/text.html");
@@ -288,6 +288,12 @@
 				for ($i = 1; $i <= 3; $i++) {
 					quadrat_referenz($zahl); // call-by-reference
 				}
+
+				zeigeZutaten("Zucker", "Mehl", "Eier", "Milch");
+
+				$zahlen = [3, 4];
+				echo "<p>Summe: ".dritteFunktion(...$zahlen)."</p>";
+
 
 				break;
 				
