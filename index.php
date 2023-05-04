@@ -1,3 +1,6 @@
+<?php
+	require "funktionen.php";
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -260,14 +263,18 @@
 						foreach ($person as $key => $ausgabe) {
 							list($vornamen, $sprache, $alter) = $ausgabe;
 							echo "<table><tr>";
-							echo "<td>" . key . ", </td>";
+							//echo "<td>" . key . ", </td>";
 							echo "<td>" . $vornamen . ", </td>";
 							echo "<td>" . $sprache . ", </td>";
 							echo "<td>" . $alter . ", </td>";
 							echo "</tr></table>";
 						}
-				
-				
+
+
+				ersteFunktion();
+				zweiteFunktion("zweiten", 1234);
+				echo "<p>".dritteFunktion(5, 6)."</p>";
+
 				break;
 				
 			}
