@@ -2,7 +2,25 @@
 	require "funktionen.php";
 	//also require_once possible
 
-	//fopen("user.txt", "r")
+	if (file_exists("user.txt")){
+		if (is_file("user.txt")){
+			$handle = fopen("user.txt", "r");
+
+			while (!feof($handle)){
+				$zeile = fgets($handle);
+				echo "<pre>";
+				print_r($zeile);
+				echo "</pre>";
+			}
+			fclose($handle);
+		}
+		else {
+			echo "<p>Datei ist kein Verzeichnis</p>";
+		}
+	}
+	else {
+		echo "<p>Datei existiert nicht</p>";
+	}
 
 ?>
 <!DOCTYPE html>
