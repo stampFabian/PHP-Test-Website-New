@@ -93,6 +93,8 @@
 						{
 							echo "<p>Checkbox: nicht angehakt</p>";
 						}
+
+						//$handleToWrite = fopen("myuser.txt", "a");
 					}
 					else 
 					{
