@@ -94,7 +94,17 @@
 							echo "<p>Checkbox: nicht angehakt</p>";
 						}
 
-						//$handleToWrite = fopen("myuser.txt", "a");
+						$handleToWrite = fopen("myuser.txt", "a");
+
+						if(fwrite($handleToWrite, utf8_decode($_POST['vn']
+                            .";".$_POST['nn'].";".$_POST['gebdat'].";".$_POST['mail'].";".$_POST['pw']."\n")))
+						{
+							echo "<p>Datei eingetragen</p>";
+						}
+						else
+						{
+							echo "<p>Datei konnte nicht geschrieben werden</p>";
+						}
 					}
 					else 
 					{
